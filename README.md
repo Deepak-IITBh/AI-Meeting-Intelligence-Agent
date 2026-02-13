@@ -13,21 +13,29 @@ Retrieve relevant answers using vector search
 The UI is clean and simple so the focus stays on functionality.
 
 Project Structure
-.
-├── app.py
-├── video_processor.py
-├── rag_pipeline.py
-├── llm_utils.py
-├── requirements.txt
-└── README.md
 
-What Each File Does
+```
+AI-Meeting-Intelligence-Agent/
+│
+├── app.py                    # Streamlit UI and main application workflow
+├── video_processor.py        # Video file handling and audio extraction
+├── rag_pipeline.py           # FAISS vector store and Q&A retrieval
+├── llm_utils.py              # LLM integration for summaries and action items
+├── requirements.txt          # Python dependencies
+├── .env                      # Environment variables (API keys)
+└── README.md                 # Project documentation
+```
 
-app.py – Handles the Streamlit UI and overall workflow.
-video_processor.py – Manages video file handling and transcript simulation.
-rag_pipeline.py – Builds the FAISS vector store and handles question answering.
-llm_utils.py – Generates the meeting summary and action items.
-requirements.txt – Contains the required Python dependencies.
+**File Descriptions**
+
+| File | Purpose |
+|------|---------|
+| `app.py` | Main Streamlit application - handles UI, video upload, and workflow orchestration |
+| `video_processor.py` | Processes video files, extracts audio, and generates transcripts |
+| `rag_pipeline.py` | Creates FAISS vector embeddings and performs semantic search for Q&A |
+| `llm_utils.py` | Integrates Groq API to generate summaries and extract action items |
+| `requirements.txt` | Lists all Python package dependencies |
+| `.env` | Stores sensitive API keys (GROQ_API_KEY) - not committed to git |
 
 Setup Instructions
 Requirements
