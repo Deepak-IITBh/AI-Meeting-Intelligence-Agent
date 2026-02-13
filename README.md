@@ -32,26 +32,41 @@ requirements.txt – Contains the required Python dependencies.
 Setup Instructions
 Requirements
 Python 3.8 or above
+Groq API key (get it from https://console.groq.com)
 
 Steps to Run
-reate a virtual environment:
+1. Create a virtual environment:
+```bash
 python -m venv venv
+```
 
+2. Activate it:
 
-Activate it:
-
-Windows
+Windows:
+```bash
 venv\Scripts\activate
-macOS/Linux
+```
+
+macOS/Linux:
+```bash
 source venv/bin/activate
+```
 
-Install dependencies:
+3. Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
+4. Set up environment variables:
+Create a `.env` file in the project root and add:
+```
+GROQ_API_KEY=your_api_key_here
+```
 
-Run the app:
-
+5. Run the app:
+```bash
 streamlit run app.py
+```
 
 
 The application will open at:
@@ -72,9 +87,7 @@ You can then type a question about the meeting and get answers based on the tran
 Tech Stack Used
 
 Streamlit – For the web interface
-
+Groq API – For LLM-powered summaries and Q&A
 sentence-transformers – To generate embeddings
-
 FAISS – For similarity search
-
 Python – Backend logic
