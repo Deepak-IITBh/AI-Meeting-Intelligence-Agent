@@ -12,6 +12,16 @@ Ask questions about the meeting content
 Retrieve relevant answers using vector search
 The UI is clean and simple so the focus stays on functionality.
 
+## 🎬 Demo Video
+
+You can watch the demo of the application here:
+
+🔗 https://drive.google.com/file/d/1YrrUMA2tLA7umMnUs6FxJpGZAt5BJ-Sb/view?usp=sharing
+
+
+
+
+
 Project Structure
 
 ```
